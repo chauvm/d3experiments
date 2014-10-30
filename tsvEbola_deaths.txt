@@ -1,0 +1,35 @@
+Year	Country	Cases	Deaths
+2014	Multiple countries	4655	2431
+2013	Uganda	6	3
+2012	Democratic Republic of the Congo	36	13
+2012	Uganda	11	4
+2011	Uganda	1	1
+2009	Democratic Republic of the Congo	32	15
+2008	Philippines	6	0
+2007	Uganda	149	37
+2007	Democratic Republic of Congo	264	187
+2004	Russia	1	1
+2004	Sudan (South Sudan)	17	7
+2003	Republic of Congo	35	29
+2002	Republic of Congo	143	128
+2001	Republic of Congo	57	43
+2001	Gabon	65	53
+2001	Uganda	425	224
+1996	Russia	1	1
+1996	Philippines	0	0
+1996	USA	0	0
+1996	South Africa	2	1
+1997	Gabon	60	45
+1996	Gabon	37	21
+1995	Democratic Republic of the Congo (formerly Zaire)	315	250
+1994	Côte d'Ivoire (Ivory Coast)	1	0
+1994	Gabon	52	31
+1992	Italy	0	0
+1990	Philippines	3	0
+1990	USA	4	0
+1989	USA	0	0
+1979	Sudan (South Sudan)	34	22
+1977	Zaire	1	1
+1976	England	1	0
+1976	Sudan (South Sudan)	284	151
+1976	Zaire (Democratic Republic of the Congo - DRC)	318	280

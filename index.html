@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        
+        <title>D3 Experiments</title>
+        <style>
+
+				.chart div {
+				  font: 10px sans-serif;
+				  background-color: steelblue;
+				  text-align: right;
+				  padding: 3px;
+				  margin: 1px;
+				  color: white;
+				}
+				
+				</style>
+    </head>
+    <body>
+        <h1>New Web Project Page</h1>
+				<div class='chart'>
+					
+				</div>   
+				
+				<svg width="720" height="700">
+					
+				</svg>  
+    </body>
+    <script type="text/javascript">
+			// var data = [2,4,6,8,10]  
+
+    
+    d3.tsv("tsvEbola_deaths.txt", type, function(error, csv_data) {
+    	// console.log(data[0].Year)
+    	data = csv_data.slice(1, csv_data.length);
+	    d3.select('.chart').selectAll('div').data(data).enter().append('div')
+	    .style("width", function(d) { return d.Cases + "px"; })
+	    .text(function(d) { return d.Country + " in " + d.Year; })
+	    .transition()
+	    .duration(1500)
+	    	.attr("width", 100);  
+	    
+	    var circles = [20, 40, 80]
+	    d3.select('svg')
+	    .selectAll('circle').data(circles).enter().append('circle')
+	    .attr('r', function(d) {return d;})
+	    .attr('cx', function(d) {return d*2;})
+	    .attr('cy', function(d) {return d*4;})
+	    .attr('fill', "red")
+    });
+    function type(d) {
+		  d.value = +d.value; // coerce to number
+		  return d;
+		}
+ 
+    </script>
+</html>
